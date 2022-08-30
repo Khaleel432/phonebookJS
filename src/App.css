@@ -1,38 +1,86 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: white;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #4b35cc;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(3vmin);
+  height: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App-container {
+  display: flex;
+  height: 100%;
+  font-size: calc(2vmin);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-child-column {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #808080;
+  height: 90vh;
+  flex: initial;
+  text-align: center;
+}
+
+.App-child-column p{
+  margin: 0;
+}
+
+.App-child-column div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.App-child-column div:hover {
+  background-color: #359fcc;
+}
+
+.App-child-contactBox {
+  color: black;
+  flex:auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App-child-contactBox div, h1, form{
+  text-align: center;
+}
+
+.App-child-contactBox th{
+  background-color: #359fcc;
+  color:white;
+}
+
+.App-child-contactBox th, td{
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.App-child-contactBox tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.App-child-contactBox tr:hover{
+  background-color: #ff7f50;
+}
+
+.App-child-contactBox div, table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App-child-contactBox table{
+  padding: 0;
+  width: 100%;
+}
+
+.App-temp {
+  color:black;
 }
